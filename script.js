@@ -135,8 +135,11 @@ class App {
 
   _hideForm() {
     // Empty inputs
-    inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.value =
-      '';
+    inputDistance.value =
+      inputDuration.value =
+      inputCadence.value =
+      inputElevation.value =
+        '';
 
     form.style.display = 'none';
     form.classList.add('hidden');
@@ -168,9 +171,6 @@ class App {
 
       // Check if data is valid
       if (
-        // !Number.isFinite(distance) ||
-        // !Number.isFinite(duration) ||
-        // !Number.isFinite(cadence)
         !validInputs(distance, duration, cadence) ||
         !allPositive(distance, duration, cadence)
       )
@@ -295,9 +295,6 @@ class App {
         duration: 1,
       },
     });
-
-    // using the public interface
-    // workout.click();
   }
 
   _setLocalStorage() {
